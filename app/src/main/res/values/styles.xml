@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance" />
+    <style name="AppTheme.TextAppearance.Item" />
+
+    <style name="AppTheme.TextAppearance.Item.Title">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/josefin</item>
+        <item name="fontWeight">500</item>
+    </style>
+    <style name="AppTheme.TextAppearance.Item.Title.Big">
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/josefin</item>
+        <item name="font">@font/josefin</item>
+        <item name="fontWeight">500</item>
+    </style>
+    <style name="AppTheme.TextAppearance.Item.Body">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+</resources>

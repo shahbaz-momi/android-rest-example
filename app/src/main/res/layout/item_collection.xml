@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="2dp"
+
+            android:layout_marginBottom="16dp"
+
+             android:clickable="true"
+             android:focusable="true"
+             android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+        android:background="@drawable/item_border">
+
+        <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:transitionName="@string/collection_image_transition"
+
+                android:background="@drawable/image_loading_placeholder"
+
+                android:contentDescription="@string/content_desc_item_img"
+        />
+
+        <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="2dp"
+
+                style="@style/AppTheme.TextAppearance.Item.Title"
+        />
+
+        <TextView
+                android:id="@+id/item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+
+                android:visibility="gone"
+
+                style="@style/AppTheme.TextAppearance.Item.Body"
+        />
+
+        <!--Spacer-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

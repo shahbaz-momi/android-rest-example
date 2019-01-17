@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Custom Collections</string>
+    <string name="content_desc_item_img">Collection Image</string>
+    <string name="error_collection_loading">An error occurred during loading, swipe down to try again</string>
+    <string name="default_collection_title">Collection</string>
+    <string name="content_desc_product_img">Product Image</string>
+    <string name="content_desc_collection_img">Collection Image</string>
+    <string name="content_desc_product_expand">Expand Product Info</string>
+    <string name="quantity_formatted">%,d available</string>
+    <string name="quantity_max_formatted">%,d+ available</string>
+    <string name="price_consistent_formatted">From\n%s</string>
+    <string name="price_inconsistent_formatted">%s</string>
+    <string name="content_desc_product_styles">Product styles</string>
+    <string name="collection_image_transition">collection_img</string>
+    <string name="no_desc_provided"><i>No description provided</i></string>
+</resources>

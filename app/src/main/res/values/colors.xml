@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">@android:color/background_light</color>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#DDD</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorImagePlaceholder">#DDD</color>
+    <color name="colorImagePlaceholderDark">#AAA</color>
+    <color name="colorImagePlaceholderDark2">#888</color>
+    <color name="colorDivider">#EEE</color>
+</resources>

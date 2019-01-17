@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/item_border"
+    android:gravity="center_vertical"
+    android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:animateLayoutChanges="true"
+
+    android:foreground="?attr/selectableItemBackgroundBorderless" android:clickable="true" android:focusable="true">
+
+    <FrameLayout android:layout_width="140dp" android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@drawable/image_loading_placeholder"
+            android:contentDescription="@string/content_desc_product_img"
+            android:scaleType="fitCenter"
+        />
+        <ImageView
+            android:id="@+id/product_styles"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="6dp"
+
+            android:visibility="gone"
+
+            android:contentDescription="@string/content_desc_product_styles"
+            android:src="@drawable/ic_style_black_24dp"
+            android:tint="@color/colorImagePlaceholderDark2"
+        />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            style="@style/AppTheme.TextAppearance.Item.Title"
+
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_toStartOf="@+id/product_price"
+        />
+
+        <TextView
+            android:id="@+id/product_desc"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            style="@style/AppTheme.TextAppearance.Item.Body"
+
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_toStartOf="@+id/product_price"
+            android:layout_below="@+id/product_title"
+            />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            style="@style/AppTheme.TextAppearance.Item.Title"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+
+            android:paddingEnd="14dp"
+            android:layout_alignTop="@id/product_title"
+            android:layout_alignBottom="@id/product_desc"
+            android:layout_alignParentEnd="true"
+        />
+
+        <View
+            android:id="@+id/product_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_margin="8dp"
+
+            android:layout_below="@+id/product_desc"
+            android:background="@color/colorDivider" />
+
+            <TextView
+                android:id="@+id/product_collection"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_toStartOf="@+id/product_quantity"
+                android:layout_below="@id/product_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                style="@style/AppTheme.TextAppearance.Item.Body"
+
+
+                app:autoSizeMinTextSize="9sp"
+                app:autoSizeMaxTextSize="14sp"
+                app:autoSizeTextType="uniform"
+            />
+
+            <TextView
+                android:id="@+id/product_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/product_divider"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginEnd="8dp"
+
+                style="@style/AppTheme.TextAppearance.Item.Body"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
